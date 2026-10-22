@@ -218,3 +218,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Generated reports
+reports/generated/
+
+# Local environment variables
+.env.*
+!.env.example
