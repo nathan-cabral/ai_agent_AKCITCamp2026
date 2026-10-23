@@ -46,11 +46,15 @@ APP_CSS = """
     .cassia-emergency-button:hover { filter: brightness(.92); color: white !important; }
 
     div.stButton > button, div[data-testid="stFormSubmitButton"] > button { background: var(--cassia-purple); border: 1px solid var(--cassia-purple); border-radius: 10px; color: white; font-weight: 700; min-height: 2.75rem; padding: .5rem .85rem; transition: background .15s ease, transform .15s ease; }
-    /* Somente os dois caminhos principais da tela inicial usam texto branco. */
+    /* Botões primários da seleção de localização usam texto branco. */
     .st-key-home_info_button button,
     .st-key-home_info_button button *,
     .st-key-home_talk_button button,
-    .st-key-home_talk_button button * { color: white !important; }
+    .st-key-home_talk_button button *,
+    .st-key-location_continue button,
+    .st-key-location_continue button *,
+    .st-key-location_confirm_edit button,
+    .st-key-location_confirm_edit button * { color: white !important; }
     div.stButton > button:hover, div[data-testid="stFormSubmitButton"] > button:hover { background: var(--cassia-purple-dark); border-color: var(--cassia-purple-dark); color: white; transform: translateY(-1px); }
     div.stButton > button:focus-visible, div[data-testid="stFormSubmitButton"] > button:focus-visible { box-shadow: 0 0 0 3px #cfb6d9; }
     button[kind="secondary"] { background: var(--cassia-lilac) !important; border-color: #c7aacd !important; color: var(--cassia-purple-dark) !important; }
