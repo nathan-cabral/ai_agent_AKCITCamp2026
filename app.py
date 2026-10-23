@@ -147,10 +147,6 @@ if "case_summary" in st.session_state:
     st.subheader("Resumo do relato")
     st.write(case_summary.summary)
 
-    st.subheader("Informações que podem ser complementadas")
-    for item in case_summary.missing_information:
-        st.markdown(f"- {item}")
-
     st.subheader("Fontes consultadas")
     if case_summary.sources:
         for source in case_summary.sources:
