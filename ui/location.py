@@ -71,7 +71,7 @@ def _parse_municipality(item: dict[str, Any]) -> dict[str, str] | None:
 
 @st.cache_data(ttl=86400, show_spinner=False)
 def load_municipalities() -> tuple[dict[str, str], ...]:
-    """Carrega a base pública do IBGE uma vez por dia no cache do Streamlit."""
+    # Carrega a base pública do IBGE uma vez por dia no cache do Streamlit.
     request = Request(
         IBGE_MUNICIPALITIES_URL,
         headers={"User-Agent": "CassiaIA/0.1 (prototipo)"},
@@ -105,7 +105,7 @@ def search_municipalities(
     uf: str = "",
     limit: int = 8,
 ) -> list[dict[str, str]]:
-    """Busca por trecho do nome, com filtro opcional por UF."""
+    #Busca por trecho do nome, com filtro opcional por UF.
     normalized_query = normalize_text(query.strip())
     normalized_uf = uf.strip().upper()
     if not normalized_query:
