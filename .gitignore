@@ -220,6 +220,7 @@ __marimo__/
 .streamlit/secrets.toml
 # Generated reports
 reports/generated/
+reports/drafts/
 
 # Local environment variables
 .env.*
