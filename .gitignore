@@ -224,4 +224,4 @@ reports/drafts/
 
 # Local environment variables
 .env.*
-!.env.example
+.env.example
