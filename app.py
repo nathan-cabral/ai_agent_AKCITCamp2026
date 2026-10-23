@@ -1,7 +1,6 @@
 import streamlit as st
 
 from agent.orchestrator import process_case_report
-from agent.tools import save_draft_for_human_review
 
 
 st.set_page_config(
@@ -157,6 +156,3 @@ if "case_summary" in st.session_state:
     if case_summary.requires_human_review:
         st.warning("Este rascunho exige revisão humana antes de qualquer uso.")
 
-    if st.button("Salvar rascunho para revisão", type="secondary"):
-        saved_path = save_draft_for_human_review(case_summary)
-        st.success(f"Rascunho salvo localmente como {saved_path.name}.")
